@@ -1,0 +1,19 @@
+<div class="container">
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" [(ngModel)]="myquery" [ngModelOptions]="{standalone: true}" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" (click)="submit()">Search</button>
+      </form>
+      {{myquery}}
+    <div class="row">
+        <div class="col col-md-4 col-lg-4" *ngFor="let item of data">
+            <div class="card" style="width: 18rem;">
+                <img src="{{item.urls.small}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">{{item.alt_description}}</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+</div>
+
