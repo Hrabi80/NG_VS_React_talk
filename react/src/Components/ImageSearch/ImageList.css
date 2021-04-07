@@ -1,0 +1,12 @@
+.images-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image{
+    margin-top: 1rem ;
+    width: 32%;
+    height: 45vh;
+}
